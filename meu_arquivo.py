@@ -5,9 +5,10 @@ tabela_vendas = pd.read_excel('Vendas.xlsx')
 
 # Visualizar a base de dados
 pd.set_option('display.max_columns', None) ### Mostrar o máximo de colunas
-print(tabela_vendas)
 
 # Faturamento por loja
+faturamento = tabela_vendas[['ID Loja','Valor Final']].groupby('ID Loja').sum()
+print(faturamento)
 
 # Quantidade de produtos vendidos por loja
 
