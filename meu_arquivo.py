@@ -1,3 +1,6 @@
+import pandas as pd  ##caso necessário instalar biblioteca utilizando comando >>> pip install pandas
+
+
 # Importar a base de dados
 
 # Visualizar a base de dados
