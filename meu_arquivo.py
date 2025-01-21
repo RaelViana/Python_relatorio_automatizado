@@ -1,7 +1,8 @@
-import pandas as pd  ##caso necessário instalar biblioteca utilizando comando >>> pip install pandas
-
+import pandas as pd
 
 # Importar a base de dados
+tabela_vendas = pd.read_excel('Vendas.xlsx')  ### rodar o comando > pip install openpyxl
+print(tabela_vendas)
 
 # Visualizar a base de dados
 
