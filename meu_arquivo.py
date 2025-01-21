@@ -1,10 +1,11 @@
 import pandas as pd
 
 # Importar a base de dados
-tabela_vendas = pd.read_excel('Vendas.xlsx')  ### rodar o comando > pip install openpyxl
-print(tabela_vendas)
+tabela_vendas = pd.read_excel('Vendas.xlsx')
 
 # Visualizar a base de dados
+pd.set_option('display.max_columns', None) ### Mostrar o máximo de colunas
+print(tabela_vendas)
 
 # Faturamento por loja
 
